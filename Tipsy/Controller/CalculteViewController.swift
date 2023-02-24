@@ -12,7 +12,6 @@ class CalculateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func billChange(_ sender: UITextField) {
@@ -24,17 +23,18 @@ class CalculateViewController: UIViewController {
     @IBAction func selectTipPressed(_ sender: UIButton) {
         calculateVC.selectTipPressed(sender.restorationIdentifier ?? "0")
         isSelectCanseled(sender)
+        billTotalValue.endEditing(true)
     }
     
     @IBAction func selectPeople(_ sender: UIStepper) {
         calculateVC.selectPeople(sender.value)
         chooseSplit.text = "\(Int(sender.value))"
+        billTotalValue.endEditing(true)
     }
     
     @IBAction func showResultButtonPressed(_ sender: UIButton) {
         billTotalValue.endEditing(true)
         self.performSegue(withIdentifier: "show result", sender: self)
-        
     }
     
     func isSelectCanseled(_ sender: UIButton) {
