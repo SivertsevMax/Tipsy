@@ -74,6 +74,9 @@
                                                         <state key="normal" title="0%">
                                                             <color key="titleColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="selectPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="za4-5o-7H9"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-W6-8ds">
                                                         <rect key="frame" x="95.666666666666671" y="0.0" width="162.66666666666663" height="54"/>
@@ -85,6 +88,9 @@
                                                         <state key="normal" title="10%">
                                                             <color key="titleColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="selectPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkd-81-Nlw"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcR-Zv-udp">
                                                         <rect key="frame" x="258.33333333333331" y="0.0" width="95.666666666666686" height="54"/>
@@ -96,6 +102,9 @@
                                                         <state key="normal" title="20%">
                                                             <color key="titleColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="selectPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8I-Na-Z9h"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -131,6 +140,9 @@
                                                             <constraint firstAttribute="width" constant="94" id="zN5-Rd-YFk"/>
                                                         </constraints>
                                                         <color key="tintColor" red="0.0" green="0.59227246050000004" blue="0.347086966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="selectPeople:" destination="BYZ-38-t0r" eventType="valueChanged" id="gy2-XI-fbY"/>
+                                                        </connections>
                                                     </stepper>
                                                 </subviews>
                                             </stackView>
@@ -189,6 +201,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="payValue" destination="aFK-rG-DKi" id="BZS-eO-xcC"/>
+                        <outlet property="peopleSelected" destination="U9q-L4-uMD" id="Mbf-2G-Lcz"/>
                         <segue destination="Pxd-fG-oOv" kind="presentation" identifier="show result" animates="NO" modalPresentationStyle="fullScreen" id="4Li-TW-ME1"/>
                     </connections>
                 </viewController>
@@ -278,6 +292,10 @@
                             <constraint firstItem="edi-de-gje" firstAttribute="top" secondItem="Q4j-C6-egQ" secondAttribute="bottom" constant="5" id="xXg-Kh-21X"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="informationOfResult" destination="edi-de-gje" id="MuM-8N-SpQ"/>
+                        <outlet property="totalPerPerson" destination="uge-CX-A3M" id="7Ps-Jf-0D0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4A-JK-vXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

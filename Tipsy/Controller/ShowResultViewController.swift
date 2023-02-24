@@ -2,6 +2,8 @@ import UIKit
 
 class ShowResultViewController: UIViewController {
     
+    @IBOutlet weak var totalPerPerson: UILabel!
+    @IBOutlet weak var informationOfResult: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
