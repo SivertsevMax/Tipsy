@@ -36,6 +36,9 @@
                                         <color key="textColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="payValueEnter:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="X3j-sx-945"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -60,14 +63,13 @@
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Fqp-fP-V0l">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fqp-fP-V0l">
                                                 <rect key="frame" x="0.0" y="56" width="354" height="54"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwy-B3-hJd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="54"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwy-B3-hJd" userLabel="0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="54"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="54" id="TVy-jN-j2G"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="UNx-Zs-YcC"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                         <color key="tintColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,11 +77,11 @@
                                                             <color key="titleColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="selectPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="za4-5o-7H9"/>
+                                                            <action selector="selectTipPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fah-H0-Eze"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-W6-8ds">
-                                                        <rect key="frame" x="95.666666666666671" y="0.0" width="162.66666666666663" height="54"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="10" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-W6-8ds" userLabel="10">
+                                                        <rect key="frame" x="118" y="0.0" width="118" height="54"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="54" id="ups-jx-Aov"/>
                                                         </constraints>
@@ -89,11 +91,11 @@
                                                             <color key="titleColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="selectPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkd-81-Nlw"/>
+                                                            <action selector="selectTipPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9g-kH-EKs"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcR-Zv-udp">
-                                                        <rect key="frame" x="258.33333333333331" y="0.0" width="95.666666666666686" height="54"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="20" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcR-Zv-udp" userLabel="20">
+                                                        <rect key="frame" x="236" y="0.0" width="118" height="54"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="54" id="NIL-WN-bgM"/>
                                                         </constraints>
@@ -103,13 +105,10 @@
                                                             <color key="titleColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="selectPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8I-Na-Z9h"/>
+                                                            <action selector="selectTipPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGC-Ql-qpI"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="kcR-Zv-udp" firstAttribute="width" secondItem="Rwy-B3-hJd" secondAttribute="width" id="ajS-gl-dlh"/>
-                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Split" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1n-aZ-7UT">
                                                 <rect key="frame" x="30" y="136" width="294" height="30"/>
@@ -201,8 +200,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chooseSplit" destination="U9q-L4-uMD" id="Mbf-2G-Lcz"/>
                         <outlet property="payValue" destination="aFK-rG-DKi" id="BZS-eO-xcC"/>
-                        <outlet property="peopleSelected" destination="U9q-L4-uMD" id="Mbf-2G-Lcz"/>
+                        <outletCollection property="selectTip" destination="Rwy-B3-hJd" collectionClass="NSMutableArray" id="hU7-Ax-aO6"/>
+                        <outletCollection property="selectTip" destination="ugm-W6-8ds" collectionClass="NSMutableArray" id="hP3-4i-vwZ"/>
+                        <outletCollection property="selectTip" destination="kcR-Zv-udp" collectionClass="NSMutableArray" id="dfN-3j-gHp"/>
                         <segue destination="Pxd-fG-oOv" kind="presentation" identifier="show result" animates="NO" modalPresentationStyle="fullScreen" id="4Li-TW-ME1"/>
                     </connections>
                 </viewController>
