@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B359B229A8D976006D6DF1 /* CalculateTipsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B359B129A8D976006D6DF1 /* CalculateTipsBrain.swift */; };
 		13D9CF0829A5D06200056DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9CF0729A5D06200056DB7 /* AppDelegate.swift */; };
 		13D9CF0A29A5D06200056DB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9CF0929A5D06200056DB7 /* SceneDelegate.swift */; };
 		13D9CF0C29A5D06200056DB7 /* CalculteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9CF0B29A5D06200056DB7 /* CalculteViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13B359B129A8D976006D6DF1 /* CalculateTipsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTipsBrain.swift; sourceTree = "<group>"; };
 		13D9CF0429A5D06200056DB7 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D9CF0729A5D06200056DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13D9CF0929A5D06200056DB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		13D9CF1E29A726CA00056DB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				13B359B129A8D976006D6DF1 /* CalculateTipsBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				13D9CF0C29A5D06200056DB7 /* CalculteViewController.swift in Sources */,
 				13D9CF2129A7273C00056DB7 /* ShowResultViewController.swift in Sources */,
+				13B359B229A8D976006D6DF1 /* CalculateTipsBrain.swift in Sources */,
 				13D9CF0829A5D06200056DB7 /* AppDelegate.swift in Sources */,
 				13D9CF0A29A5D06200056DB7 /* SceneDelegate.swift in Sources */,
 			);
